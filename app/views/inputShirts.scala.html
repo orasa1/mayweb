@@ -1,14 +1,48 @@
-<form>
+
+
+<br>
+<h1>Add Products </h1>
+<div class="container-fluid" style="background-color: #2aabd2">
     <form action="/postShirts" method="post">
-        id : <input type="text" name="id" size="10" maxlength="5" required="required"> <br>
-        name : <input type="text" name="name" size="20" maxlength="10" required="required"><br>
-        logo : <input type="text"name="logo" size="10" maxlength="10" required="required"><br>
-        col  : <input type="text" name="col" size="10" maxlength="10" required="required"><br>
-        price :<input type="number" name="price" size="10"maxlength="5" required="required"><br>
-        num : <input type="number" name="num" size="10" maxlength="10"required="required"><br>
-        <input type="submit" class="btn btn-success" value="Save">
-        <input type="reset" class="btn btn-primary " value="Cancel">
-
+        <table class="table table-stripe">
+            <tr>
+                <td>Id</td>
+                <td><input type="text" name="id" size="10" maxlength="5" required="required"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" size="10" maxlength="45" required="required"></td>
+            </tr>
+            <tr>
+                <td>Logo</td>
+                <td><input type="text" name="logo" size="10" maxlength="20" required="required"></td>
+            </tr>
+            <tr>
+                <td>COL</td>
+                <td><input type="text" name="col" size="15" maxlength="30" required="required"></td>
+            </tr>
+                 <tr>
+            <td>num</td>
+            <td><input type="text" name="num" size="10" maxlength="50" required="required"></td>
+                </tr>
+            <tr>
+                <td>price</td>
+                <td><input type="text" name="price" size="15" maxlength="50" required="required"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" class="btn btn-success" value="Save">
+                    <input type="reset" class="btn btn-danger" value="Cancel">
+                </td>
+            </tr>
+        </table>
     </form>
+</div>
 
-</form>
+
+
+
+
+
+
+

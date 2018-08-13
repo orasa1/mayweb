@@ -7,7 +7,11 @@ GET     /                           controllers.Application.home()
 GET     /showMyShirts               controllers.Application.showMyShirts()
 
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /inputShirts               controllers.Application.inputShirts()
+POST    /postShirts                controllers.Application.postShirts()
 
-POST    /postShirts                controllers.Application.
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                controllers.Assets.at(path="/public", file)
